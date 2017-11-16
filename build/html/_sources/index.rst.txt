@@ -1,0 +1,43 @@
+.. Sphinx-Help documentation master file, created by
+   sphinx-quickstart on Fri Nov 10 16:40:55 2017.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Welcome to Sphinx-Help's Documentation!
+=========================================
+
+.. important::
+
+    **Sphinx** : Sphinx 是一种文档工具，它可以令人轻松的撰写出清晰且优美的文档, 由 Georg Brandl 在BSD 许可证下开发。
+    新版的Python文档 就是由Sphinx生成的， 并且它已成为Python项目首选的文档工具，同时它对 C/C++ 项目也有很好的支持；
+    并计划对其它开发语言添加特殊支持。 它采用reStructuredText语法下面列出了其良好特性,这些特性在Python官方文档中均有体现:
+
+   * 丰富的输出格式: 支持 HTML (包括 Windows 帮助文档), LaTeX (可以打印PDF版本), manual pages（man 文档）, 纯文本
+   * 完备的交叉引用: 语义化的标签,并可以自动化链接函数,类,引文,术语及相似的片段信息
+   * 明晰的分层结构: 可以轻松的定义文档树,并自动化链接同级/父级/下级文章
+   * 美观的自动索引: 可自动生成美观的模块索引
+   * 精确的语法高亮: 基于 Pygments 自动生成语法高亮
+   * 开放的扩展: 支持代码块的自动测试,并包含Python模块的自述文档(API docs)等
+
+
+Contents
+--------
+.. toctree::
+   :maxdepth: 3
+
+
+   sphinxEnv
+   rsStructuresText
+
+
+
+
+
+
+
+
+
+
+
+
+

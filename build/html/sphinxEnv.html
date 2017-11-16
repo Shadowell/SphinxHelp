@@ -1,0 +1,422 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Sphinx 环境搭建 &mdash; Sphinx-Help 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="Sphinx-Help 1.0 documentation" href="index.html"/>
+        <link rel="next" title="rsStructureText 语法" href="rsStructuresText.html"/>
+        <link rel="prev" title="Welcome to Sphinx-Help’s Documentation!" href="index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Sphinx-Help
+          
+
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Sphinx 环境搭建</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#python">安装Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">修改缓存目录</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">创建环境变量</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">安装Sphinx</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pycharm">安装PyCharm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">Sphinx初探</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="rsStructuresText.html">rsStructureText 语法</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="rsStructuresText.html#id1">简介</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rsStructuresText.html#id2">标题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rsStructuresText.html#id3">段落</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rsStructuresText.html#id4">标记</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rsStructuresText.html#id5">列表</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rsStructuresText.html#id6">代码</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rsStructuresText.html#id7">超链接</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rsStructuresText.html#id8">图片</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rsStructuresText.html#id9">表格</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rsStructuresText.html#id10">引用</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rsStructuresText.html#id12">注脚</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Sphinx-Help</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Sphinx 环境搭建</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/sphinxEnv.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="sphinx">
+<h1>Sphinx 环境搭建<a class="headerlink" href="#sphinx" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="python">
+<h2>安装Python<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">下载 <a class="reference external" href="https://www.python.org/ftp/python/3.6.3/python-3.6.3-amd64.exe">Python安装包</a></p>
+</li>
+<li><p class="first">安装Pyhton：</p>
+<blockquote>
+<div><p>运行该 <code class="docutils literal"><span class="pre">exe</span></code> 文件，按照提示进行安装，可根据需要选择相应的安装路径，本例安装路径为：<code class="docutils literal"><span class="pre">D:\Tools\LANG\Python\python-3.6.3</span></code> 。</p>
+</div></blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h2>修改缓存目录<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><blockquote>
+<div>用户若直接按默认方式安装，可跳过此步骤，则Pip缓存会默认放在 <code class="docutils literal"><span class="pre">C:\Users\$username\AppData\Local\pip\cache</span></code> 目录下，而第三方工具会被安装在 <code class="docutils literal"><span class="pre">$PYTHON_HOME\Lib\site-packages</span></code> 目录下。
+本例为了将Pip缓存目录以及第三方软件包site-packages分离出来，选择以下安装方式：</div></blockquote>
+<p><code class="docutils literal"><span class="pre">注:</span></code> <code class="docutils literal"><span class="pre">username</span></code> 为当前用户名</p>
+</div></blockquote>
+<ul>
+<li><p class="first">新建以下目录：</p>
+<p><code class="docutils literal"><span class="pre">E:\Data\PBT\Python</span></code></p>
+<p><code class="docutils literal"><span class="pre">E:\Data\PBT\Python\Pip</span></code></p>
+<p><code class="docutils literal"><span class="pre">E:\Data\PBT\Python\Python36</span></code></p>
+</li>
+<li><p class="first">新建以下目录及文件：</p>
+<p><code class="docutils literal"><span class="pre">C:\Users\$username\pip</span></code></p>
+<p><code class="docutils literal"><span class="pre">C:\Users\$username\pip\pip.ini</span></code></p>
+</li>
+<li><p class="first"><code class="docutils literal"><span class="pre">pip.ini</span></code> 文件内容如下：</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">[</span><span class="k">global</span><span class="p">]</span>
+<span class="n">timeout</span> <span class="o">=</span> <span class="mi">60</span>
+<span class="n">cache</span><span class="o">-</span><span class="nb">dir</span> <span class="o">=</span> <span class="n">E</span><span class="p">:</span>\<span class="n">Data</span>\<span class="n">PBT</span>\<span class="n">Python</span>\<span class="n">Pip</span>
+
+<span class="p">[</span><span class="nb">list</span><span class="p">]</span>
+<span class="nb">format</span> <span class="o">=</span> <span class="n">columns</span>
+
+<span class="p">[</span><span class="n">install</span><span class="p">]</span>
+<span class="n">user</span> <span class="o">=</span> <span class="n">true</span>
+
+<span class="p">[</span><span class="n">download</span><span class="p">]</span>
+<span class="n">dest</span> <span class="o">=</span> <span class="n">E</span><span class="p">:</span>\<span class="n">Downloads</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="id3">
+<h2>创建环境变量<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">新增以下环境变量:</p>
+<p><code class="docutils literal"><span class="pre">PYTHONUSERBASE:</span>&#160;&#160;&#160; <span class="pre">E:\Data\PBT\Python</span></code></p>
+<p><code class="docutils literal"><span class="pre">PYTHON_HOME:</span>&#160;&#160;&#160;&#160;&#160;&#160; <span class="pre">D:\Tools\LANG\Python\python-3.6.3</span></code></p>
+<p><code class="docutils literal"><span class="pre">PYTHON_USER_HOME:</span>&#160; <span class="pre">E:\Data\PBT\Python\Python36</span></code></p>
+<p><code class="docutils literal"><span class="pre">注：若按默认方式则只需添加相应的PYHTON_HOME环境变量</span></code></p>
+</li>
+<li><p class="first">Path变量新增以下内容:</p>
+<p><code class="docutils literal"><span class="pre">%PYTHON_HOME%;%PYTHON_HOME%\Scripts;</span></code></p>
+</li>
+</ul>
+</div>
+<div class="section" id="id4">
+<h2>安装Sphinx<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">运行Pip，安装Sphinx:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">sphinx</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">pip将下载sphinx及其依赖包，并进行安装:</p>
+<blockquote>
+<div><p>pip的缓存目录为：<code class="docutils literal"><span class="pre">E:\Data\PBT\Python\Pip</span></code></p>
+<p>sphinx等第三方包目录：<code class="docutils literal"><span class="pre">E:\Data\PBT\Python\Python36\site-packages</span></code></p>
+<p>sphinx等脚本及程序目录：<code class="docutils literal"><span class="pre">E:\Data\PBT\Python\Python36\Scripts</span></code></p>
+</div></blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="pycharm">
+<h2>安装PyCharm<a class="headerlink" href="#pycharm" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">下载 <a class="reference external" href="https://www.jetbrains.com/pycharm/download/download-thanks.html?platform=windows&amp;code=PCC">PyCharm</a> 安装包，并按照提示安装:</p>
+<blockquote>
+<div><p>本例安装路径为：<code class="docutils literal"><span class="pre">D:\Tools\PyCharm</span></code> ，可根据需要选择相应的安装路径。</p>
+</div></blockquote>
+</li>
+</ul>
+<p><code class="docutils literal"><span class="pre">注:</span> <span class="pre">若按默认安装方式,可略过以下步骤，则PyCharm的配置文件会在C:\Users\john\.PyCharmCE目录下</span></code></p>
+<ul>
+<li><p class="first">新建以下目录：</p>
+<p><code class="docutils literal"><span class="pre">E:\Data\Tools\PyCharm</span></code></p>
+</li>
+<li><p class="first">编辑配置文件</p>
+<p><code class="docutils literal"><span class="pre">D:\Tools\PyCharm\bin\idea.properties</span></code></p>
+</li>
+<li><p class="first">新增以下两行：</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">idea</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">path</span><span class="o">=</span><span class="n">E</span><span class="p">:</span><span class="o">/</span><span class="n">Data</span><span class="o">/</span><span class="n">Tools</span><span class="o">/</span><span class="n">PyCharm</span><span class="o">/</span><span class="n">config</span>
+<span class="n">idea</span><span class="o">.</span><span class="n">system</span><span class="o">.</span><span class="n">path</span><span class="o">=</span><span class="n">E</span><span class="p">:</span><span class="o">/</span><span class="n">Data</span><span class="o">/</span><span class="n">Tools</span><span class="o">/</span><span class="n">PyCharm</span><span class="o">/</span><span class="n">system</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="id6">
+<h2>Sphinx初探<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">创建Sphinx项目</p>
+<p>Sphinx提供了一个脚本 <code class="docutils literal"><span class="pre">sphinx-quickstart</span></code> ，该脚本能够通过简单的向导来生成工程文件及目录。
+打开PyCharm，新建工程，填写工程名称，如 <code class="docutils literal"><span class="pre">SphinxHelp</span></code>，在PyCharm的Terminal下执行 <code class="docutils literal"><span class="pre">sphinx-quickstart</span></code> 命令，或者通过
+<code class="docutils literal"><span class="pre">Tools-&gt;Sphinx</span> <span class="pre">Quickstart</span></code> 工具来创建一个工程，按照Terminal的提示，填入相应的信息：</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>&gt; Root path <span class="k">for</span> the documentation <span class="o">[</span>.<span class="o">]</span>
+&gt; Separate <span class="nb">source</span> and build directories <span class="o">(</span>y/n<span class="o">)</span> <span class="o">[</span>n<span class="o">]</span>: y
+&gt; Name prefix <span class="k">for</span> templates and static dir <span class="o">[</span>_<span class="o">]</span>:
+&gt; Project name: Sphinx-Help
+&gt; Author name<span class="o">(</span>s<span class="o">)</span>: Fengj
+&gt; Project version: <span class="m">1</span>.0
+&gt; Project release <span class="o">[</span><span class="m">1</span>.0<span class="o">]</span>:
+&gt; Project language <span class="o">[</span>en<span class="o">]</span>:
+&gt; Source file suffix <span class="o">[</span>.rst<span class="o">]</span>:
+&gt; Name of your master document <span class="o">(</span>without suffix<span class="o">)</span> <span class="o">[</span>index<span class="o">]</span>:
+&gt; Do you want to use the epub builder <span class="o">(</span>y/n<span class="o">)</span> <span class="o">[</span>n<span class="o">]</span>:
+&gt; Create Makefile? <span class="o">(</span>y/n<span class="o">)</span> <span class="o">[</span>y<span class="o">]</span>:
+&gt; Create Windows <span class="nb">command</span> file? <span class="o">(</span>y/n<span class="o">)</span> <span class="o">[</span>y<span class="o">]</span>:
+</pre></div>
+</div>
+<p>工程创建完成后会在当前工程目录 <code class="docutils literal"><span class="pre">SphinxHelp</span></code> 下生成一些目录及文件：</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">SphinxHelp</span>
+   <span class="o">|</span>
+   <span class="o">|</span>
+   <span class="o">|-----</span><span class="n">make</span><span class="o">.</span><span class="n">bat</span>                <span class="n">Windows下编译脚本</span>
+   <span class="o">|</span>
+   <span class="o">|-----</span><span class="n">Makefile</span>                <span class="n">Linux下编译脚本</span>
+   <span class="o">|</span>
+   <span class="o">|-----</span><span class="n">build</span>                   <span class="n">执行编译之后产生的文件所在目录</span>
+   <span class="o">|</span>
+   <span class="o">|-----</span><span class="n">source</span>                  <span class="n">项目源文件目录</span>
+            <span class="o">|</span>
+            <span class="o">|</span>
+            <span class="o">|----</span><span class="n">conf</span><span class="o">.</span><span class="n">py</span>         <span class="n">项目配置文件</span>
+            <span class="o">|----</span><span class="n">index</span><span class="o">.</span><span class="n">rst</span>       <span class="n">项目主框架文件</span>
+            <span class="o">|----</span><span class="n">_static</span>         <span class="n">静态文件存放目录</span>
+            <span class="o">|----</span><span class="n">_templates</span>      <span class="n">模板存放目录</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">编译运行</p>
+<p>执行 <code class="docutils literal"><span class="pre">make</span> <span class="pre">html</span></code> 命令后，会在 <code class="docutils literal"><span class="pre">build</span></code> 目录下生成 <code class="docutils literal"><span class="pre">doctrees</span></code> 和 <code class="docutils literal"><span class="pre">html</span></code> 目录，生成的html文件就在该目录下。
+Sphinx可以连接多个文件到单个层次结构的文件，在主文件 <code class="docutils literal"><span class="pre">index.rst</span></code> 中有如下内容：</p>
+</li>
+</ul>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">toctree</span><span class="p">::</span>
+    <span class="p">:</span><span class="n">maxdepth</span><span class="p">:</span> <span class="mi">2</span>
+
+    <span class="n">sphinxEnv</span>               <span class="n">新增的rst文件名称</span>
+    <span class="n">rsStructuresText</span>        <span class="n">新增的rst文件名称</span>
+</pre></div>
+</div>
+<p>在该标识符下，添加新增的 <code class="docutils literal"><span class="pre">rst</span></code> 文件名称（不用加后缀）,就可以将多个文件组织起来，每次执行 <code class="docutils literal"><span class="pre">make</span> <span class="pre">html</span></code> 命令之后就生成相应的html文件</p>
+<ul class="simple">
+<li>更换主题</li>
+</ul>
+<p>Sphinx有很多 <a class="reference external" href="http://www.sphinx-doc.org/en/stable/theming.html#builtin-themes">内置主题</a> ，不同的主题会有不同的显示效果，本例采用 <code class="docutils literal"><span class="pre">sphinx_rtd_theme</span></code> 主题，可使用 <code class="docutils literal"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">sphinx_rtd_theme</span></code>
+安装，并在 <code class="docutils literal"><span class="pre">conf.py</span></code> 文件中添加如下配置项:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sphinx_rtd_theme</span>
+<span class="n">html_theme</span> <span class="o">=</span> <span class="s2">&quot;sphinx_rtd_theme&quot;</span>
+<span class="n">html_theme_path</span> <span class="o">=</span> <span class="p">[</span><span class="n">sphinx_rtd_theme</span><span class="o">.</span><span class="n">get_html_theme_path</span><span class="p">()]</span>
+</pre></div>
+</div>
+<p>该主题的更多使用方式请参考 <a class="reference external" href="https://github.com/rtfd/sphinx_rtd_theme">sphinx_rtd_theme使用方法</a></p>
+<p><strong>更多Sphinx使用规范请参考：</strong> <a class="reference external" href="http://www.sphinx-doc.org/en/stable/">sphinx-doc官网</a></p>
+<p><strong>reST的语法请参考</strong> <a class="reference external" href="http://localhost:63342/SphinxHelp/build/html/rsStructuresText.html">rsStructureText 语法</a></p>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="rsStructuresText.html" class="btn btn-neutral float-right" title="rsStructureText 语法" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="Welcome to Sphinx-Help’s Documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Fengj.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
