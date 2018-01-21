@@ -48,8 +48,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'Sphinx-Help'
-copyright = '2017, Fengj'
+project = 'Deep-Wisdom'
+copyright = '2018, Fengj(Email:453761491@qq.com)'
 author = 'Fengj'
 
 # The version info for the project you're documenting, acts as replacement for

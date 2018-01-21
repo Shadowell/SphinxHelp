@@ -268,6 +268,34 @@ rsStructureText 语法
         .. [#f1] Text of the first footnote.
         .. [#f2] Text of the second footnote.
 
+
+.. |date| date::
+.. |time| date:: %H:%M
+
+Today's date is |date|.
+
+This document was generated on |date| at |time|.
+
+
+# item4
+# item5
+# item6
+
+.. contents:: Here's a very long Table of
+   Contents title
+
+.. header:: This space for rent.
+
+
+.. meta::
+   :description: The reStructuredText plaintext markup language
+   :keywords: plaintext, markup language
+
+`Write to me`_ with your questions.
+
+    .. _Write to me: 453761491@qq.com
+
+
 **更多reST语法请参考：**
 
 * `reStructuredText标记语言规范 <http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html>`_
